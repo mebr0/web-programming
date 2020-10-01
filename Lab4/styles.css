@@ -1,0 +1,50 @@
+body {
+	height: 450px;
+	width: 450px;
+}
+
+.calendar {
+	height: 450px;
+	width: 400px;
+
+	background-color: red;
+	border: 1px solid black;
+}
+
+.heading {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	height: 50px;
+
+	font-size: 28px;
+}
+
+.days {
+	display: grid;
+	grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+	grid-gap: 10px;
+
+	height: 370px;
+	width: 370px;
+
+	padding: 15px;
+
+	font-size: 20px;
+}
+
+.day {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid black;
+}
+
+.big {
+	grid-row: span 2;
+	grid-column: span 2;
+
+	font-size: 40px;
+}
