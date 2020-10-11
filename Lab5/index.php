@@ -32,7 +32,7 @@
 	<h1>Exercise 2</h1>
 	<p>Formula C = (5/9)(F - 32)</p>
 	<p>F of 59 = C of 
-	<?
+	<?php
 		$F = 59;
 		print (5 / 9) * ($F - 32);
 	?>
@@ -43,7 +43,7 @@
 	<p>C = 2 * pi * r</p>
 	<p>A = pi * r ** 2</p>
 	<p>D C A of radius 3 are 
-	<?
+	<?php
 		$r = 3;
 		$pi = 3.14159;
 
@@ -56,7 +56,7 @@
 	<h1>Exercise 4</h1>
 	<p>D = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5</p>
 	<p>Distance between (1, 2) and (3, 5) = 
-	<?
+	<?php
 		$x1 = 1;
 		$y1 = 2;
 		$x2 = 3;
@@ -68,7 +68,7 @@
 
 	<h1>Exercise 5</h1>
 	<p>Hours minutes seconds for 4123 seconds = 
-	<?
+	<?php
 		$seconds = 4123;
 
 		$seconds %= 3600 * 24;
@@ -90,20 +90,20 @@
 	</p>
 
 	<h1>Exercise 6</h1>
-	<?
+	<?php
 		$input = 100;
-		$cost = 12;
+		$cost = 25;
 
 		$costs = array(50, 20, 10, 5, 2, 1);
 
 		$difference = $input - $cost;
 
-		foreach ($costs as $value) {
-			$count = (int) ($difference / $value);
+		foreach($costs as $item) {
+			$count = (int) ($difference / $item);
 
-			print "<p>Number of " . $value . " cent coins: " . $count . "</p>";
+			print $item . " " . $count . "\n";
 
-			$difference -= $value * $count;
+			$difference -= $count * $item;
 		}
 	?>
 </body>
