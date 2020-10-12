@@ -1,0 +1,46 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trainers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 90%;
+    width: 70%;
+}
+
+.trainer {
+    height: 400px;
+    width: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #eee;
+}
+
+.trainer img {
+    height: 300px;
+    width: 200px;
+}
+
+.trainer_fullname {
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainer_fullname a {
+    text-decoration: none;
+	color: #000;
+	font-size: 20px;
+}

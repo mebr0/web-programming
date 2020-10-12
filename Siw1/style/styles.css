@@ -1,0 +1,35 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1200px;
+    height: 600px;
+}
+
+.content_wrapper div {
+    width: 600px;
+    height: 600px;
+}
+
+.all_about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 72px;
+
+}
+
+.all_about_text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
