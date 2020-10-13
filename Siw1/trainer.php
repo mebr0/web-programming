@@ -12,11 +12,11 @@
 		</div>
 
 		<nav>
-			<a href="index.php">HOME</a>
-			<a href="photos.php">PHOTOS</a>
-			<a href="schedule.php">SCHEDULE</a>
+			<a href="index.html">HOME</a>
+			<a href="photos.html">PHOTOS</a>
+			<a href="schedule.html">SCHEDULE</a>
             <a href="trainers.php">TRAINERS</a>
-			<a href="about.php">ABOUT</a>
+			<a href="about.html">ABOUT</a>
 		</nav>
     </header>
     
@@ -92,7 +92,7 @@
 				<a href="https://twitter.com/?lang=en">our twitter account</a>
 			</div>
 			<div class="footer_item photos">
-				<h3><a href="photos.php">Photos</a></h3>
+				<h3><a href="photos.html">Photos</a></h3>
 				<div class="photos__wrapper">
 					<div class="photos__wrapper__item">
 						<img src="static/footer/1.jpg" alt="">
