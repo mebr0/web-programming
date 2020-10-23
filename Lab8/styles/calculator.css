@@ -1,0 +1,72 @@
+.calculator {
+    height: 430px;
+    width: 320px;
+}
+
+.header {
+    height: 150px;
+}
+
+#number {
+    height: 150px;
+    width: 302px;
+
+    font-size: 64px;
+
+    text-align: right;
+}
+
+.main {
+    height: 280px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers {
+    height: 280px;
+    width: 240px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cell {
+    height: 70px;
+    width: 80px;
+}
+
+.cell button {
+    height: 100%;
+    width: 100%;
+
+    font-size: 36px;
+    
+    border: none;
+}
+
+.cell button:hover {
+    background-color: #EEE;
+}
+
+.operators {
+    height: 280px;
+    width: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column  ;
+    flex-wrap: wrap;
+}
+
+.operator button {
+    background-color: #FFA500;
+}
+
+.operator button:hover {
+    background-color: #f7cd7f;
+}

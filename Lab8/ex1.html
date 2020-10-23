@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 1 - Calculator</title>
+    <script src="scripts/calculator.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles/calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <input type="text" name="number" id="number" readonly>
+        </div>
+        <div class="main">
+            <div class="numbers">
+                <div class="number cell">
+                    <button onclick="append('1')">1</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('2')">2</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('3')">3</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('4')">4</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('5')">5</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('6')">6</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('7')">7</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('8')">8</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('9')">9</button>
+                </div>
+                <div class="special cell">
+                    <button onclick="clearInput()">CE</button>
+                </div>
+                <div class="number cell">
+                    <button onclick="append('0')">0</button>
+                </div>
+                <div class="special cell">
+                    <button onclick="readSecond()">=</button>
+                </div>
+            </div>
+            <div class="operators">
+                <div class="operator cell">
+                    <button onclick="readFirst('+')">+</button>
+                </div>
+                <div class="operator cell">
+                    <button onclick="readFirst('-')">-</button>
+                </div>
+                <div class="operator cell">
+                    <button onclick="readFirst('x')">x</button>
+                </div>
+                <div class="operator cell">
+                    <button onclick="readFirst('/')">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="index.html">Back</a>
+</body>
+</html>
