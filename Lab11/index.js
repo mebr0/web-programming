@@ -3,11 +3,13 @@ const getMenu = (show) => {
 
     request.onreadystatechange = () => {
         if (request.readyState == 4 && request.status == 200) {
+            // Call function show as callback
             show(request.responseXML.childNodes.item(0));
         }
     };
 
-    request.open("GET", "menu.xml", true);
+    // Handle CORS problems with it
+    request.open("GET", "https://www.w3schools.com/xml/simple.xml", true);
 
     request.send();
 };
@@ -75,7 +77,7 @@ const showOrderTable = (menu) => {
             const price = +row.item(1).innerText.substring(1);
 
             // Count sum and trigger "change" event
-            row.item(row.length - 1).innerText = price * count;
+            row.item(row.length - 1).innerText = Math.round(price * count * 100) / 100;
             row.item(row.length - 1).dispatchEvent(new Event("change"));
         });
 
@@ -99,7 +101,7 @@ const showOrderTable = (menu) => {
             // Update total summary
             const lastRow = rows[rows.length - 1];
             const items = lastRow.children;
-            items.item(items.length - 1).innerText = sum;
+            items.item(items.length - 1).innerText = Math.round(sum * 100) / 100;
         });
 
         row.appendChild(summaryElement);
@@ -116,10 +118,18 @@ const showOrderTable = (menu) => {
 const createHeaders = (row, ...other) => {
     const headerRow = document.createElement("tr");
 
-    Array.from(row).concat(other).forEach(item => {
+    Array.from(row).forEach(item => {
         const header = document.createElement("th");
 
         header.innerText = item.nodeName;
+
+        headerRow.appendChild(header);
+    });
+
+    other.forEach(item => {
+        const header = document.createElement("th");
+
+        header.innerText = item;
 
         headerRow.appendChild(header);
     });
