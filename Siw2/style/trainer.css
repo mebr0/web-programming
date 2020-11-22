@@ -1,0 +1,41 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trainer {
+    height: 550px;
+    width: 400px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #eee;
+}
+
+.trainer img {
+    height: 400px;
+    width: 300px;
+}
+
+.trainer_fullname {
+    height: 50px;
+
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainer_age {
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+{
+    "trainers": [
+        {
+            "name": "David",
+            "surname": "Smith",
+            "age": 42,
+            "phone": "+7 543 212 23 12",
+            "email": "qwe@gmail.com",
+            "photo": "david.jpg"
+        },
+        {
+            "name": "Selina",
+            "surname": "Stuart",
+            "age": 32,
+            "phone": "7 522 313 12 32",
+            "email": "qweqwe@gmail.com",
+            "photo": "selina.jpg"
+        },
+        {
+            "name": "John",
+            "surname": "Doe",
+            "age": 27,
+            "phone": "+7 888 231 12 12",
+            "email": "qweasd@gmail.com",
+            "photo": "john.jpg"
+        },
+        {
+            "name": "Jenifer",
+            "surname": "Alex",
+            "age": 26,
+            "phone": "+7 123 414 23 22",
+            "email": "jenifer@gmail.com",
+            "photo": "jenifer.jpg"
+        },
+        {
+            "name": "Jecy",
+            "surname": "Deoko",
+            "age": 38,
+            "phone": "+7 999 999 99 99",
+            "email": "jecyj@gmail.com",
+            "photo": "jecy.jpg"
+        }
+    ]
+}
